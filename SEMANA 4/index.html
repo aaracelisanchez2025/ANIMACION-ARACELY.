@@ -1,0 +1,99 @@
+    <html>
+        <head>
+        <title> TIPOS DE CODIGO </title>
+        <style>
+            *{
+                padding:0PX;
+                margin: 0px;
+            }
+            .contenedor{
+                width: 600px;
+                height: 400px;
+                border: 1px solid black;
+                margin: 0 auto;
+                margin-top: 150px;
+                position: relative;
+                overflow: hidden;/*fuera del borde no sobresale la figura*/
+            }
+            .tarjeta1, .tarjeta2, .tarjeta3{
+                width: 200px;
+                height: 400px;
+                top: -400px;
+                position: absolute;
+                background-size: cover;
+
+            }
+            .tarjeta1{
+                background-image: url(img/html.jpg);
+                left: 0px;
+                animation: tarjeta1 3s 1 forwards ;
+            }
+            .tarjeta2{
+                background-image: url(img/css3.jpg);
+                left: 200px;
+                animation: tarjeta2 3s 1 forwards 3s ;           
+            }
+            .tarjeta3{
+                background-image: url(img/java.jpg);
+                left: 400px;  
+                animation: tarjeta3 3s 1 forwards 6s;           
+            }
+            /*LAS ANIMACIONES*/
+            @keyframes tarjeta1{
+                0%{
+                    top: -400PX;
+                    transform: rotateY(180deg);
+                }
+                50%{
+                    left: 600px;
+                    top: 400px;
+                }
+                100%{
+                    top: 0px;
+                }
+            }  
+            @keyframes tarjeta2{
+                0%{
+                    top: 400PX;
+                    transform: rotateY(180deg);
+                }
+                50%{
+                    left: 400px;
+                    top: 300px;
+                }
+                100%{
+                    top: 0px;
+                }
+            }  
+            @keyframes tarjeta3{
+                0%{
+                    top: 400PX;
+                    transform: rotateY(180deg);
+                }
+                40%{
+                    right: 600px;
+                    top: 200px;
+                }
+                60%{ 
+                    top: 300px;
+                }
+                100%{
+                    top: 0px;
+                }
+            }
+            /*EVENTOS*/
+            .tarjeta1:hover, .tarjeta2:hover, .tarjeta3:hover{
+                transition: 1s;
+                scale: 1.2;
+                z-index: 1;
+            }
+        </style> 
+        </head>
+        <body>
+            <div class="contenedor">
+                <div class="tarjeta1"></div>
+                <div class="tarjeta2"></div>
+                <div class="tarjeta3"></div>
+            </div>
+        </body>
+    </html>
