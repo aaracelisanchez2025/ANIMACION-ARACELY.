@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Animaciones CS3</title>
+        <style>
+            *{
+                padding:0px;
+            }
+            .contenedor{
+                width: 400px;
+                height: 200px;
+                border: 1px solid black;
+                position: relative;/*provoca el centrado del div contenedor*/
+                margin: 0 auto;/*provoca el centrado del div contenedor*/
+                overflow: hidden;/*ocultar cuando esta el cuadradito fuera del contenedor*/
+                background-image: url(img/Espacioo.gif);
+                background-size: cover;
+            }
+            .cuadradito{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                right:-200px;
+                top: 50px;
+                animation-timing-function:linear;
+
+                animation: cuadradito 15s infinite;
+            }
+            @keyframes cuadradito{
+                from{
+                    right:-200px;
+                }
+                to{
+                  right:500px;
+                }                
+            }
+            .cuadraditoB{
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                left:100px;
+                top: 100px;
+                animation-timing-function:linear;
+                animation: cuadraditoB 8s infinite;
+            }
+
+            .cuadraditoC{
+                height: 25px;
+                width: 25px;
+                position: absolute;
+                right:-100px;
+                top: 150px;
+
+
+                animation: cuadradito 20s infinite;
+            }
+            @keyframes cuadraditoC{
+                0%{
+                    left:-80px;
+                    top: 0px;
+                    rotate: 0deg;
+                }
+                50%{
+                    left:215px;
+                    top: 160px;
+                    rotate: 60deg;
+                }
+                100%{
+                     left:400px;
+                    top: -165px;
+                    rotate: 0deg;                   
+                }             
+            }
+            .cuadradito img{
+                width: 50px;
+                height: 50px;
+            }
+            .cuadraditoB img{
+                width: 200px;
+                height: 200px;
+            }
+            .cuadraditoC img{
+                width: 25px;
+                height: 25px;
+            }
+        </style>
+    </head>
+   <body>
+    <div class="contenedor">
+        <div class="cuadradito">
+            <img src="./img/nave.png" alt=" ">
+        </div>
+        <div class="cuadraditoB">
+            <img src="./img/tierra.gif" alt=" ">  
+        </div>
+        <div class="cuadraditoC">
+            <img src="./img/astrinauta.png" alt=" ">  
+        </div>
+    </div>
+    
+
+   </body> 
+</html>
