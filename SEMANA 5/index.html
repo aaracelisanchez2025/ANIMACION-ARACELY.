@@ -1,0 +1,95 @@
+<html>
+<head>
+        <title>clip</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            #contenedor{
+                width: 400px;
+                height: 800px;
+                border:1px solid black;
+                position: relative;
+                margin:0 auto;     /*centrar el contenedor*/    
+                overflow: hidden;  /*oculta todo lo que contiene*/   
+            }
+            #triangulo{
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                clip-path:polygon(50% 0%, 0% 100%, 100% 100%); 
+                top: 40px;
+                right: 150px;
+                position: absolute;
+            }
+            #circulo{
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                clip-path: circle(50% at 50% 50%);
+                top: 140px;
+                right: 150px;
+                position: absolute;
+            }
+            #ovalo{
+                width: 300px;
+                height: 400px;
+                background-color:red;
+                clip-path: ellipse(25% 40% at 50% 50%);
+                top: 200px;
+                right: 50px;
+                position: absolute;
+            }
+            #rectangulo{
+                width: 100px;
+                height: 30px;
+                background-color:black;
+                top: 300px;
+                right: 50px;
+                position: absolute;
+            }
+            #rectangulo1{
+                width: 100px;
+                height: 30px;
+                background-color:black;
+                top: 300px;
+                left: 50px;
+                position: absolute;
+            }
+            #ovalo1{
+                width: 150px;
+                height: 50px;
+                background-color:brown;
+                clip-path: ellipse(25% 40% at 50% 50%);
+                top: 540px;
+                right: 80px;
+                position: absolute;
+            }
+            #ovalo2{
+                width: 150px;
+                height: 50px;
+                background-color:brown;
+                clip-path: ellipse(25% 40% at 50% 50%);
+                top: 540px;
+                left: 80px;
+                position: absolute;
+            } 
+
+        </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="triangulo"></div>
+        <div id="circulo"></div>
+        <div id="ovalo"></div>
+        <div id="rectangulo"></div>
+        <div id="rectangulo1"></div>
+        <div id="ovalo1"></div>
+        <div id="ovalo2"></div>
+    </div>
+<a href="../index.html">
+    <button>Regresar</button>
+</a>
+</body>
+</html>           

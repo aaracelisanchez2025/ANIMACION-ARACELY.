@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:black;
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+    width:500px;
+    height:800px;
+
+    margin:auto;
+
+    overflow:hidden;
+    position:relative;
+
+    border:1px solid black;
+}
+
+/* CIELO */
+
+.cielo{
+    position:absolute;
+
+    left:-200px;
+    top:-300px;
+
+    filter:blur(2px);
+
+    animation:cielo 30s forwards;
+}
+
+@keyframes cielo{
+
+    from{
+        scale:100%;
+        filter:blur(5px);
+    }
+
+    to{
+        scale:130%;
+        filter:blur(2px);
+    }
+}
+
+/* PLAYA */
+
+.playa{
+    position:absolute;
+
+    left:-600px;
+
+    animation:playa 20s forwards;
+}
+
+@keyframes playa{
+
+    from{
+        top:0px;
+        scale:100%;
+        filter:blur(5px);
+    }
+
+    to{
+        top:-50px;
+        scale:105%;
+        filter:blur(0px);
+    }
+}
+
+/* PERSONA */
+
+.persona{
+    position:absolute;
+
+    width:800px;
+
+    left:-300px;
+    top:300px;
+
+    animation:persona 30s forwards;
+}
+
+@keyframes persona{
+
+    from{
+        scale:100%;
+    }
+
+    to{
+        scale:50%;
+    }
+}
+
+/* NEBLINA */
+
+.neblina {
+    position:absolute;
+    width:700px;
+    right:-70px;
+    top:550px;
+}
+
+.Nombre{
+    fill: black;
+    stroke: 0px;
+    stroke-width: 200px;
+}
+/* TEXTO SVG */
+
+svg{
+    position:absolute;
+
+    width:250px;
+
+    top:150px;
+    left:250px;
+
+    z-index:100;
+}
+
+/* ANIMACION TEXTO */
+
+svg path{
+
+    fill:transparent;
+
+    stroke:#fff;
+    stroke-width:20;
+
+    stroke-dasharray:5000;
+    stroke-dashoffset:5000;
+
+    animation:textAnimation 5s ease forwards;
+}
+
+@keyframes textAnimation{
+
+    0%{
+        stroke-dashoffset:5000;
+    }
+
+    80%{
+        fill:transparent;
+    }
+
+    100%{
+        fill:black;
+        stroke-dashoffset:0;
+    }
+}
