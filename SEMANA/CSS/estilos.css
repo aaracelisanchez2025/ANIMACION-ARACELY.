@@ -1,0 +1,61 @@
+/* Quitar márgenes por defecto */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Fondo de la página */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Contenedor de cada ejercicio */
+section{
+    width:80%;
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+/* Títulos */
+h1{
+    text-align:center;
+    color:#0056b3;
+    margin-bottom:15px;
+}
+
+h2{
+    text-align:center;
+    color:#444;
+    margin-bottom:20px;
+}
+
+/* Párrafos */
+p{
+    text-align:justify;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+/* Imágenes */
+img{
+    display:block;
+    margin:20px auto;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.3);
+}
+
+/* Línea divisoria */
+hr{
+    width:80%;
+    margin:40px auto;
+    border:1px solid #ccc;
+}
