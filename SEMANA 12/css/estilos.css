@@ -1,0 +1,16 @@
+.video-blender{
+    text-align:center;
+    margin:40px auto;
+}
+
+.video-blender h2{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.video-blender video{
+    width:80%;
+    max-width:900px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
